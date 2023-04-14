@@ -17,7 +17,7 @@ const displayGeneratedNumber = function(number) {
 }
 
 // When play click again button
-document.querySelector('.again').addEventListener('click', function () {
+document.querySelector('.restart').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
 
@@ -44,7 +44,7 @@ document.querySelector('.check').addEventListener('click', function () {
     displayGeneratedNumber(secretNumber);
 
 
-    document.querySelector('body').backgroundColor = '#60b347';
+    document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
 
     if (score > highScore) {
